@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Component } from "react"
+import Markdown from "react-markdown"
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+interface State {
+  markdown: string
 }
 
-export default App
+export default class App extends Component<NonNullable<unknown>, State> {
+  constructor(props: NonNullable<unknown>) {//lint
+    super(props)
+    this.state = { markdown: '' }
+  }
+
+  componentDidMount() {
+    fetch('https://raw.githubusercontent.com/xongs08/xongs08.github.io/main/Markdown.md')
+      .then(resp => resp.text())
+      .then(data => this.setState({ markdown: data }))
+      .catch(err => console.log(`Não foi possível fazer o request para o Markdown (raw): ${err}`))
+  }
+
+  render() {
+    return <div className="markdown"><Markdown>{this.state.markdown}</Markdown></div>
+  }
+}
+ 
