@@ -5,7 +5,7 @@
 - Tecnologias: [NodeJs](https://nodejs.org/en/about), [React](https://react.dev), [Typescript](https://www.typescriptlang.org) e [Python](https://www.python.org);
 
 ### Quer automatizar suas planilhas sem estresse?
-[ORÇAMENTOS](/orcamentos)
+[ORÇAMENTOS](/automatizacoes)
 
 ### Me Contate
 [Minhas Redes](/linktree)
