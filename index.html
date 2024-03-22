@@ -3,11 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="icon" type="image/x-ico" href="https://react.dev/favicon.ico" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+      
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .content {
+        background-color: #0d1117;
+        font-family: JetBrains Mono, monospace;
+        color: #f2f2f2;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 2;
+        padding-top: 75px;
+        padding-bottom: 150px;
+      }
+
+      .blue {
+        color: #1E90FF;
+      }
+
+      .txt:hover {
+        text-decoration: underline;
+      }
+    </style>
 
     <title>João Zacchello</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.tsx"></script>
+    <div class="content">
+      <div class="container">
+        <h1 class="txt blue"># README.md</h1>
+        <h2 class="txt blue">Who am i?</h2>
+        <ul>
+          <li><p><span class="txt blue">Name:</span> <span class="txt">João Zacchello;</span></p></li>
+          <li><p><span class="txt blue">Languages:</span> <span class="txt">Portuguese 🇧🇷</span>, <span class="txt">English 🇺🇸</span>;</p></li>
+          <li>
+            <p class="txt blue">Technologies/frameworks:</p>
+            <ul>
+              <li>
+                <a href="https://nodejs.org/en/about" target="_blank">NodeJS;</a>
+              </li>
+              <li>
+                <a href="https://react.dev" target="_blank">React;</a>
+              </li>
+              <li>
+                <a href="https://typescriptlang.org" target="_blank">Typrscript;</a>
+              </li>
+              <li>
+                <a href="https://www.mongodb.com/atlas/database" target="_blank">MongoDB;</a>
+              </li>
+              <li>
+                <a href="https://firebase.google.com" target="_blank">Firebase;</a>
+              </li>
+              <li>
+                <a href="https://expressjs.com" target="_blank">Express;</a>
+              </li>
+              <li>
+                <a href="https://www.python.org" target="_blank">Python;</a>
+              </li>
+              <li>
+                <a href="https://www.java.com/en/download/help/whatis_java.html" target="_blank">Java;</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <br>
+        <a href="https://github.com/xongs08">
+          <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github Badge" width="100px" height="30px" />
+        </a>
+        <br />
+        <a href="https://www.instagram.com/xongs.og">
+          <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram Badge" width="100px" height="30px" />
+        </a>
+        <br />
+        <h3 class="blue txt">Projects</h3>
+        <ul>
+          <li>
+            <a href="https://github.com/zacchellodev/vitemin">Vitemin</a>
+          </li>
+          <li>
+            <a href="https://github.com/xongs08/xongs08.github.io/">Repo of this site</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
