@@ -1,39 +1,7 @@
-* {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 body {
-  background-color: #0d1117;
-}  
-
-.markdown {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
-  color: #c8c8c8;
-  margin: 40px auto;
-  max-width: 800px;
-  padding: 0 20px;
-  zoom: 1.4;
-}
-        
-.markdown h1, h2, h3, h4, h5, h6 {
-  color: #58a6ff;
-}
-        
-.markdown a {
-  color: #58a6ff;
-  text-decoration: none;
-}
-        
-.markdown a:hover {
-  text-decoration: underline;
-}
-        
-.markdown p {
-  margin: 15px 0;
-}
-        
-.markdown ul {
-  margin: 15px 0;
-  padding: 0 0 0 20px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
