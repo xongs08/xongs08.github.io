@@ -8,7 +8,7 @@ body {
 
 .content {
   background-color: #0d1117;
-  font-family: JetBrains Mono, monospace;
+  font-family: "JetBrains Mono", monospace;
   color: #f2f2f2;
   width: 100vw;
   height: 100vh;
@@ -31,11 +31,12 @@ body {
 
 .container {
   max-width: 740px;
-  padding: 0 20px; /* Adicione um espaço nas laterais */
+  padding: 0 20px;
 }
 
 @media only screen and (max-width: 740px) {
   .container {
-    padding: 0 10px; /* Reduza o espaço nas laterais para telas menores */
+    padding-top: 70px;
+    padding: 0 10px;
   }
 }
